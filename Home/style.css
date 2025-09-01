@@ -1,5 +1,59 @@
+:root{
+    --d-blue: #B9D6F2;
+    --m-blue: #061A40;
+    --l-blue: #0353A4;
+    --da-blue: #006DAA;
+    --dar-blue: #003559;
+}
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: var(--m-blue);
+    height: auto;
+}
+
+.s1{
+    width: 100%;
+    height: auto;
+    
+}
+
+.wrap-img{
+    width: 100%;
+
+}
+
+.img{
+    width: 100%;
+    right: auto;
+}
+
+.wrap-text{
+    width: 100%;
+    padding: 20px;
+
+}
+
+.title{
+    color: var(--d-blue);
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.text{
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
 }
