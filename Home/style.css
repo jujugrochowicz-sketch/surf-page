@@ -57,3 +57,52 @@ body{
     line-height: 30px;
     font-style: italic;
 }
+
+.line{
+    height: 3px;
+    background-color: var(--d-blue);
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+@media (width >= 768px){
+    .s1{
+        min-height: 80vh;
+        background-image: url('./images/mar-desk.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 40px;
+        
+    }
+    .img{
+        display: none;
+    }
+
+    .title{
+        color: #061A40;
+        font-size: 96px;
+        text-shadow: 00 4px 4px #000000;
+        text-transform: uppercase;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .text{
+        font-size: 22px;
+        text-shadow: 0 4px 4px #00000021;
+        line-height: 30px;
+        color:#061A40;
+        font-weight: 900;
+        max-width: 500px;
+    }
+
+
+}
