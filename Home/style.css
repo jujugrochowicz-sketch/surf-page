@@ -1,4 +1,4 @@
-:root{
+:root {
     --d-blue: #B9D6F2;
     --m-blue: #061A40;
     --l-blue: #0353A4;
@@ -10,47 +10,48 @@
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--m-blue);
     height: auto;
+    width: 120vw;
 }
 
-.s1{
+.s1 {
     width: 100%;
     height: auto;
-    
+
 }
 
-.wrap-img{
+.wrap-img {
     width: 100%;
 
 }
 
-.img{
+.img {
     width: 100%;
     right: auto;
 }
 
-.wrap-text{
+.wrap-text {
     width: 100%;
     padding: 20px;
 
 }
 
-.title{
+.title {
     color: var(--d-blue);
     font-family: "Inter", sans-serif;
     margin-bottom: 10px;
     font-size: 40px;
 }
 
-.text{
+.text {
     font-family: "Inter", sans-serif;
     color: #ffffff;
     font-size: 20px;
@@ -58,16 +59,50 @@ body{
     font-style: italic;
 }
 
-.line{
+.line {
     height: 3px;
     background-color: var(--d-blue);
     width: 90%;
     margin: 0 auto;
 }
 
+.s2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: 80vh;
+    padding: 50px 20px;
+    gap: 20px;
+    width: 100%;
+}
 
-@media (width >= 768px){
-    .s1{
+.wrap-img {
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-card {
+    width: 100%;
+    height: auto;
+}
+
+
+.card {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+   margin: 0 auto;
+}
+
+
+@media (width >=768px) {
+    .s1 {
         min-height: 80vh;
         background-image: url('./images/mar-desk.png');
         background-repeat: no-repeat;
@@ -78,31 +113,44 @@ body{
         flex-direction: column;
         width: 100%;
         padding: 0px 40px;
-        
+
     }
-    .img{
+
+    .img {
         display: none;
     }
 
-    .title{
+    .title {
         color: #061A40;
         font-size: 96px;
         text-shadow: 00 4px 4px #000000;
         text-transform: uppercase;
     }
 
-    .line{
+    .line {
         display: none;
     }
 
-    .text{
+    .text {
         font-size: 22px;
         text-shadow: 0 4px 4px #00000021;
         line-height: 30px;
-        color:#061A40;
+        color: #061A40;
         font-weight: 900;
         max-width: 500px;
     }
 
+    .s2 {
+        gap: 70px;
+    }
+
+    .card {
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        justify-content: center;
+    }
 
 }
